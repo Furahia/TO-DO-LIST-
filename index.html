@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1 class="text-center"> TO-DO APPLICATION</h1>
+    <form id="task-form">
+        <label>Title: </label>
+        <input type = "text" id="task-title" required>
+        <label>Description: </label>
+        <textarea id="task-description"></textarea>
+        <label> Expect completion date: </label>
+        <input type = "date" id="task-date" required>
+        <input type="hidden" id="updated-todo-id">
+        <br>
+        <button id="submit-new-todo">Add task</button>
+        <button id="update-todo" class="hide">Update todo</button>
+    </form>
+    <div id= "task-list">
+        <h2 class="text-center"> Uncompleted Tasks</h2>
+        <ul id="Uncompleted-tasks"> </ul>
+        <h2 class="text-center"> completed-tasks</h2>
+        <ul id= "completed-tasks"></ul>
+
+    </div>
+ <script src="Todo.JS"></script>
+</body>
